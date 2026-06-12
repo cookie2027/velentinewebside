@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine Proposal ??</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .yes {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .no {
+            background: #f44336;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>?? Will You Be My Valentine? ??</h1>
+    <p>You make my world beautiful! ??</p>
+
+    <button class="yes" onclick="yesClicked()">Yes ??</button>
+    <button class="no" id="noBtn">No ??</button>
+
+    <script>
+        function yesClicked() {
+            document.body.innerHTML =
+            "<h1>?? Yay! Thank You ?? ??</h1><h2>I Love You! ??</h2>";
+        }
+
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", function() {
+            noBtn.style.top = Math.random() * window.innerHeight + "px";
+            noBtn.style.left = Math.random() * window.innerWidth + "px";
+        });
+    </script>
+
+</body>
+</html>
